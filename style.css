@@ -1,0 +1,446 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 95px;
+  background-color: #373c3f;
+}
+
+header ul {
+  margin-left: 50px;
+}
+header span {
+  display: none;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ebebeb;
+  line-height: 74px;
+  padding-left: 38px;
+  width: 140px;
+}
+#menu {
+  display: none;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#menu img {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+header a {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ebebeb;
+  text-decoration: none;
+  float: left;
+  line-height: 95px;
+  text-transform: uppercase;
+  padding: 0 24px;
+}
+header a:hover {
+  background-color: #202529;
+}
+/*______________________________________*/
+section {
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  height: 577px;
+  background: url(images/bag_blue.png);
+  background-size: cover;
+}
+section h1 {
+  margin: 204px 0 60px 78px;
+  font-size: 3.7em;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  width: 88%;
+  letter-spacing: 3px;
+}
+section a {
+  margin-left: 78px;
+  font-size: 34px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.502);
+  width: 357px;
+  text-decoration: none;
+}
+section img {
+  margin-right: 140px;
+  float: right;
+}
+section img:hover {
+  width: 1%;
+}
+/*________________________________________*/
+
+.like {
+  width: 100%;
+  height: 244px;
+  background-color: #27212c;
+  position: absolute;
+  top: 672px;
+}
+.like span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 143%;
+  color: rgb(146, 130, 160);
+  height: 24px;
+  position: absolute;
+  top: 110px;
+  left: 3%;
+}
+.like div {
+  width: 218px;
+  background-color: #bc3183;
+  float: right;
+  height: 244px;
+}
+.like img {
+  position: absolute;
+  top: 44%;
+  right: 7%;
+}
+.like img:hover {
+  width: 1%;
+}
+/*______________________________________________*/
+
+main {
+  width: 100%;
+  height: 295px;
+  position: absolute;
+  top: 916px;
+}
+.arrow {
+  width: 25%;
+  height: 295px;
+  background-color: #5b0fa1;
+  float: left;
+}
+.arrow img {
+  position: relative;
+  top: 45%;
+  left: 48%;
+}
+.arrow img:hover {
+  width: 4%;
+}
+.foto {
+  width: 75%;
+  height: 295px;
+  float: left;
+}
+
+.foto img {
+  width: 33.3333333333%;
+  height: 295px;
+  float: left;
+}
+/*________________________________________________*/
+
+.content {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 562px;
+  position: absolute;
+  top: 1211px;
+}
+
+.content a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(8, 140, 165);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  width: 224px;
+  height: 25px;
+  float: left;
+  margin: 5% 0 0 6%;
+}
+.text1 {
+  clear: left;
+  float: left;
+  width: 40%;
+  padding: 3% 0 0 6%;
+}
+.text2 {
+  float: right;
+  width: 40%;
+  padding: 3% 6% 0 0;
+}
+.text1 p, .text2 p{
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.857;
+  color: rgb(81, 81, 81);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  margin-bottom: 20px;
+}
+
+
+
+/*_______________640px__________________________________*/
+@media screen and (max-width: 1024px) {
+  .arrow {
+    width: 33.3%;
+  }
+  .foto {
+    width: 66.7%;
+  }
+  .foto img {
+    width: 50%;
+  }
+  .foto img:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    height: 74px;
+  }
+  header ul {
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: none;
+    background-color: #373c3f;
+  }
+  header a {
+    font-size: 14px;
+    clear: left;
+    line-height: 47.5px;
+    width: 100%;
+    padding: 5px 5px 5px 15px;
+  }
+  header span {
+    display: block;
+  }
+  #menu {
+    display: block;
+  }
+  #menu:hover {
+    background-color: #202529;
+  }
+  section {
+    top: 74px;
+    height: 348px;
+  }
+  section h1 {
+    font-size: 150%;
+    margin: 115px 0 25px 0;
+    padding-left: 11%;
+    width: 89%;
+    letter-spacing: 2px;
+  }
+  section a {
+    margin-left: 11%;
+    font-size: 115%;
+    width: 180px;
+    letter-spacing: 1.5px;
+  }
+  section img {
+    margin-right: 10%;
+    width: 1.8%;
+  }
+
+  .like {
+    top: 422px;
+    height: 150px;
+  }
+  .like span {
+    font-size: 67%;
+    top: 68.75px;
+    left: 4%;
+  }
+  .like div {
+    height: 150px;
+    width: 38%;
+  }
+  .like img {
+    top: 65.31px;
+    right: 17%;
+  }
+
+  main {
+    height: 1661px;
+    top: 572px;
+  }
+  .arrow {
+    width: 100%;
+    height: 551px;
+  }
+  .arrow img {
+    top: 45%;
+    left: 50%;
+    width: 6%;
+  }
+  .foto {
+    width: 100%;
+    height: 1110px;
+  }
+  .foto img {
+    width: 100%;
+    height: 555px;
+  }
+  .foto img:last-child {
+    display: none;
+  }
+  .content {
+    top: 2233px;
+    height: 55%;
+  }
+  .content a {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 6%;
+    left: 63px;
+  }
+  .text1 {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 63px;
+    top: 13%;
+  }
+  .text1 p {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    font-size: 85%;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+  .text2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 37px;
+  }
+  header span {
+    font-size: 14px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+  }
+  header ul {
+    background-color: #373c3f;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+  }
+  header a {
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    line-height: 250%;
+  }
+  #menu {
+    width: 37px;
+    height: 37px;
+  }
+  #menu img {
+    top: 12px;
+    left: 10px;
+    width: 45%;
+  }
+
+  section {
+    top: 37px;
+    height: 175px;
+  }
+  section h1 {
+    font-size: 18.6px;
+    margin: 57.8px 0 12.6px 0;
+    padding-left: 30.17px;
+    width: 229.72px;
+    letter-spacing: 1px;
+  }
+  section a {
+    margin-left: 30.17px;
+    font-size: 10.5px;
+    width: 90px;
+    letter-spacing: 0.75px;
+  }
+  section img {
+    margin-right: 80px;
+    width: 1.2%;
+    position: relative;
+    top: 7px;
+  }
+
+  .like {
+    top: 212px;
+    height: 75px;
+  }
+  .like span {
+    width: 70%;
+    font-size: 63%;
+    top: 34.5px;
+    left: 2%;
+  }
+  .like div {
+    height: 75px;
+    width: 80px;
+  }
+  .like img {
+    width: 3%;
+    top: 30px;
+    right: 34px;
+  }
+
+  main {
+    height: 831px;
+    top: 287px;
+  }
+  .arrow {
+    width: 100%;
+    height: 275px;
+  }
+  .arrow img {
+    top: 45%;
+    left: 50%;
+    width: 5%;
+  }
+  .foto {
+    width: 100%;
+    height: 556px;
+  }
+  .foto img {
+    width: 100%;
+    height: 279px;
+  }
+  .content {
+    overflow: hidden;
+    top: 1118px;
+    height: 60%;
+  }
+  .content a {
+    font-size: 20px;
+    top: 6%;
+    left: 7%;
+  }
+  .text1 {
+    width: 95%;
+    left: 7%;
+    top: 16%;
+  }
+  .text1 p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+}
