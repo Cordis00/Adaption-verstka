@@ -1,6 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 header {
-  position: absolute;
-  width: 100%;
   height: 95px;
   background-color: #373c3f;
 }
@@ -11,7 +12,6 @@ header ul {
 header span {
   display: none;
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
   color: #ebebeb;
   line-height: 74px;
   padding-left: 38px;
@@ -32,7 +32,6 @@ header span {
 }
 header a {
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
   color: #ebebeb;
   text-decoration: none;
   float: left;
@@ -44,7 +43,7 @@ header a:hover {
   background-color: #202529;
 }
 /*______________________________________*/
-section {
+.awesome {
   position: absolute;
   top: 95px;
   width: 100%;
@@ -52,27 +51,25 @@ section {
   background: url(images/bag_blue.png);
   background-size: cover;
 }
-section h1 {
+.awesome h1 {
   margin: 204px 0 60px 78px;
   font-size: 3.7em;
-  font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
   width: 88%;
   letter-spacing: 3px;
 }
-section a {
+.awesome a {
   margin-left: 78px;
   font-size: 34px;
-  font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.502);
   width: 357px;
   text-decoration: none;
 }
-section img {
+.awesome img {
   margin-right: 140px;
   float: right;
 }
-section img:hover {
+.awesome img:hover {
   width: 1%;
 }
 /*________________________________________*/
@@ -85,7 +82,6 @@ section img:hover {
   top: 672px;
 }
 .like span {
-  font-family: 'Montserrat', sans-serif;
   font-size: 143%;
   color: rgb(146, 130, 160);
   height: 24px;
@@ -153,7 +149,6 @@ main {
 .content a {
   text-decoration: none;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
   color: rgb(8, 140, 165);
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
   width: 224px;
@@ -175,7 +170,6 @@ main {
 .text1 p, .text2 p{
   width: 100%;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.857;
   color: rgb(81, 81, 81);
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
@@ -230,24 +224,24 @@ main {
   #menu:hover {
     background-color: #202529;
   }
-  section {
+  .awesome {
     top: 74px;
     height: 348px;
   }
-  section h1 {
+  .awesome h1 {
     font-size: 150%;
     margin: 115px 0 25px 0;
     padding-left: 11%;
     width: 89%;
     letter-spacing: 2px;
   }
-  section a {
+  .awesome a {
     margin-left: 11%;
     font-size: 115%;
     width: 180px;
     letter-spacing: 1.5px;
   }
-  section img {
+  .awesome img {
     margin-right: 10%;
     width: 1.8%;
   }
@@ -358,24 +352,24 @@ main {
     width: 45%;
   }
 
-  section {
+  .awesome {
     top: 37px;
     height: 175px;
   }
-  section h1 {
+  .awesome h1 {
     font-size: 18.6px;
     margin: 57.8px 0 12.6px 0;
     padding-left: 30.17px;
     width: 229.72px;
     letter-spacing: 1px;
   }
-  section a {
+  .awesome a {
     margin-left: 30.17px;
     font-size: 10.5px;
     width: 90px;
     letter-spacing: 0.75px;
   }
-  section img {
+  .awesome img {
     margin-right: 80px;
     width: 1.2%;
     position: relative;
