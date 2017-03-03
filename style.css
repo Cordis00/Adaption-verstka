@@ -2,12 +2,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 header {
-  height: 95px;
+  float: left;
+  width: 100%;
   background-color: #373c3f;
+  position: fixed;
+  z-index: 2;
 }
 
 header ul {
-  margin-left: 50px;
+  margin-left: 2%;
 }
 header span {
   display: none;
@@ -37,15 +40,14 @@ header a {
   float: left;
   line-height: 95px;
   text-transform: uppercase;
-  padding: 0 24px;
+  padding: 0 2%;
 }
 header a:hover {
   background-color: #202529;
 }
 /*______________________________________*/
 .awesome {
-  position: absolute;
-  top: 95px;
+  float: left;
   width: 100%;
   height: 577px;
   background: url(images/bag_blue.png);
@@ -76,29 +78,28 @@ header a:hover {
 
 .like {
   width: 100%;
-  height: 244px;
   background-color: #27212c;
-  position: absolute;
-  top: 672px;
+  float: left;
+  position: relative;
 }
 .like span {
-  font-size: 143%;
+  font-size: 137%;
   color: rgb(146, 130, 160);
-  height: 24px;
   position: absolute;
   top: 110px;
-  left: 3%;
+  left: 5%;
 }
 .like div {
   width: 218px;
   background-color: #bc3183;
   float: right;
   height: 244px;
+  position: relative;
 }
 .like img {
   position: absolute;
-  top: 44%;
-  right: 7%;
+  top: 110px;
+  left: 45%;
 }
 .like img:hover {
   width: 1%;
@@ -106,44 +107,17 @@ header a:hover {
 /*______________________________________________*/
 
 main {
-  width: 100%;
-  height: 295px;
-  position: absolute;
-  top: 916px;
+  float: left;
 }
-.arrow {
+main img {
   width: 25%;
-  height: 295px;
-  background-color: #5b0fa1;
-  float: left;
-}
-.arrow img {
-  position: relative;
-  top: 45%;
-  left: 48%;
-}
-.arrow img:hover {
-  width: 4%;
-}
-.foto {
-  width: 75%;
-  height: 295px;
-  float: left;
-}
-
-.foto img {
-  width: 33.3333333333%;
-  height: 295px;
   float: left;
 }
 /*________________________________________________*/
 
 .content {
   background-color: #ebebeb;
-  width: 100%;
-  height: 562px;
-  position: absolute;
-  top: 1211px;
+  float: left;
 }
 
 .content a {
@@ -160,12 +134,12 @@ main {
   clear: left;
   float: left;
   width: 40%;
-  padding: 3% 0 0 6%;
+  padding: 3% 0 5% 6%;
 }
 .text2 {
   float: right;
   width: 40%;
-  padding: 3% 6% 0 0;
+  padding: 3% 6% 5% 0;
 }
 .text1 p, .text2 p{
   width: 100%;
@@ -180,23 +154,18 @@ main {
 
 /*_______________640px__________________________________*/
 @media screen and (max-width: 1024px) {
-  .arrow {
-    width: 33.3%;
+
+  main img {
+    width: 33.333333%;
   }
-  .foto {
-    width: 66.7%;
-  }
-  .foto img {
-    width: 50%;
-  }
-  .foto img:last-child {
+  main img:last-child {
     display: none;
   }
 }
 
 @media screen and (max-width: 640px) {
   header {
-    height: 74px;
+    float: left;
   }
   header ul {
     margin: 0;
@@ -225,96 +194,60 @@ main {
     background-color: #202529;
   }
   .awesome {
-    top: 74px;
+    float: left;
     height: 348px;
   }
   .awesome h1 {
-    font-size: 150%;
+    font-size: 165%;
     margin: 115px 0 25px 0;
-    padding-left: 11%;
+    padding-left: 6%;
     width: 89%;
     letter-spacing: 2px;
   }
   .awesome a {
-    margin-left: 11%;
+    margin-left: 6%;
     font-size: 115%;
     width: 180px;
     letter-spacing: 1.5px;
   }
   .awesome img {
-    margin-right: 10%;
+    margin-right: 20%;
     width: 1.8%;
   }
 
   .like {
-    top: 422px;
-    height: 150px;
+    float: left;
   }
   .like span {
-    font-size: 67%;
+    font-size: 81%;
     top: 68.75px;
     left: 4%;
   }
   .like div {
     height: 150px;
-    width: 38%;
+    width: 25%;
   }
   .like img {
     top: 65.31px;
-    right: 17%;
+    right: 11%;
   }
 
-  main {
-    height: 1661px;
-    top: 572px;
-  }
-  .arrow {
+  main img {
     width: 100%;
-    height: 551px;
   }
-  .arrow img {
-    top: 45%;
-    left: 50%;
-    width: 6%;
-  }
-  .foto {
-    width: 100%;
-    height: 1110px;
-  }
-  .foto img {
-    width: 100%;
-    height: 555px;
-  }
-  .foto img:last-child {
+  main img:last-child {
     display: none;
   }
-  .content {
-    top: 2233px;
-    height: 55%;
-  }
+
   .content a {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 6%;
-    left: 63px;
+    margin: 10% 0 4% 12%;
   }
   .text1 {
     width: 80%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 63px;
-    top: 13%;
+    padding-left: 12%;
   }
   .text1 p {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    font-size: 85%;
-    line-height: 2;
-    margin-bottom: 30px;
+    font-size: 143%;
   }
   .text2 {
     display: none;
@@ -322,20 +255,12 @@ main {
 }
 
 @media screen and (max-width: 320px) {
-  header {
-    height: 37px;
-  }
+
   header span {
     font-size: 14px;
     line-height: 37px;
     letter-spacing: 1px;
     padding-left: 20px;
-  }
-  header ul {
-    background-color: #373c3f;
-    overflow: hidden;
-    top: 0px;
-    right: 0px;
   }
   header a {
     font-size: 10px;
@@ -347,26 +272,19 @@ main {
     height: 37px;
   }
   #menu img {
-    top: 12px;
-    left: 10px;
     width: 45%;
   }
 
   .awesome {
-    top: 37px;
     height: 175px;
   }
   .awesome h1 {
     font-size: 18.6px;
     margin: 57.8px 0 12.6px 0;
-    padding-left: 30.17px;
-    width: 229.72px;
     letter-spacing: 1px;
   }
   .awesome a {
-    margin-left: 30.17px;
     font-size: 10.5px;
-    width: 90px;
     letter-spacing: 0.75px;
   }
   .awesome img {
@@ -376,65 +294,26 @@ main {
     top: 7px;
   }
 
-  .like {
-    top: 212px;
-    height: 75px;
-  }
   .like span {
-    width: 70%;
     font-size: 63%;
     top: 34.5px;
-    left: 2%;
   }
   .like div {
     height: 75px;
-    width: 80px;
   }
   .like img {
-    width: 3%;
-    top: 30px;
-    right: 34px;
+    width: 8%;
+    top: 45%;
   }
 
-  main {
-    height: 831px;
-    top: 287px;
-  }
-  .arrow {
-    width: 100%;
-    height: 275px;
-  }
-  .arrow img {
-    top: 45%;
-    left: 50%;
-    width: 5%;
-  }
-  .foto {
-    width: 100%;
-    height: 556px;
-  }
-  .foto img {
-    width: 100%;
-    height: 279px;
-  }
-  .content {
-    overflow: hidden;
-    top: 1118px;
-    height: 60%;
-  }
   .content a {
     font-size: 20px;
-    top: 6%;
-    left: 7%;
+    margin-bottom: 1%;
   }
   .text1 {
-    width: 95%;
-    left: 7%;
-    top: 16%;
+    width: 75%;
   }
   .text1 p {
     font-size: 13px;
-    line-height: 22px;
-    margin-bottom: 17px;
   }
 }
