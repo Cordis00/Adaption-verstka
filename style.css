@@ -67,10 +67,13 @@ header a:hover {
   width: 357px;
   text-decoration: none;
 }
-.awesome img {
+.fa {
+  color: #ffffff;
   margin-right: 140px;
   float: right;
+  font-size: 100px;
 }
+
 .awesome img:hover {
   width: 1%;
 }
